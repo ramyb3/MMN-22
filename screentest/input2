@@ -1,0 +1,34 @@
+read_mat MAT_A,        1 
+print_mat MAT_A
+read_mat MAT_B,
+print_mat MAT_C
+read_mat MAT_D, 5, 7, 3, 4, 9, 6, 0, 9, 11, 12, 13, 14, 15, 0, 65, 41, 65
+print_mat MAT_D
+
+read_mat MAT_A, 1, 7, 3,, 4, 9, 6, 7, 8, 9, 11, 12, 13, 14, 15, 0, 65, 34, 67
+print_mat MAT_A
+read_mat MAT_A, 1,7,3,4,9,6,7,8,9FGFG,11,12,13,14,15,0,65,34,67
+print_mat MAT_A
+
+add_mat MAT_C,MAT_A,MAT_B
+print_mat MAT_B
+
+sub_mat MAT_F, MAT_B, MAT_F
+print_mat MAT_F
+
+mul_mat MAT_A,MAT_C,MAT_D
+print_mat MAT_D
+
+mul_scalar MAT_F, ..,     MAT_E
+mul_scalar MAT_F, 2,     MAT_E
+print_mat MAT_W
+print_mat                                      MAT_E
+
+print_mat MAT_F
+print_mat MAT_D
+trans_mat MAT_F,        MAT_D
+print_mat MAT_F
+print_mat MAT_D
+
+
+stop
